@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script>
+			window.onload=function(){
+				var x,y;
+				var year,mon,day;
+				var oFname=document.getElementById('text01');
+				var oGname=document.getElementById('text02');
+				var oIcard=document.getElementById('text03');
+				var oTxt01=document.getElementById('text04');
+				var oTxt02=document.getElementById('text05');
+				var oBtn01=document.getElementById('btn01');
+				year=String(oIcard.value).substr(6,4);
+				mon=String(oIcard.value).substr(10,2);
+				day=String(oIcard.value).substr(12,2);
+				oBtn01.onclick=function(){
+					oTxt01.innerHTML="名字:"+oFname.value+" "+oGname.value;
+					oTxt02.innerHTML="出生年月日："+year+"年"+mon+"月"+day+"日";
+				}
+			
+			}
+		</script>
+	</head>
+
+	<body>
+		50郭
+		family_name:<input type="text" name="text01" id="text01" value="" /><br />
+		given_name:<input type="text" name="text02" id="text02" value="" /><br />
+		身份证号：:<input type="text" name="text03" id="text03" value="" /><br />
+		<button id="btn01">=</button><br />
+		<p id="text04"></p>
+		<p id="text05"></p>
+	</body>
+
+</html>
