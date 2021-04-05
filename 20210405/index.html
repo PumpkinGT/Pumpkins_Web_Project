@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script>
+			window.onload=function(){
+				var oBtn01= document.getElementById('btn01');
+				var oTxt01=document.getElementById('text01');
+				var x=0,y;
+				oBtn01.onclick=function fun(){
+					x++;
+					if(x>30){
+						return 0;
+					}
+//					document.write(x+"只小蜜蜂呀，飞在花丛中呀"+"<br />");
+					document.getElementById('text01').innerHTML+= x+"只小蜜蜂呀，飞在花丛中呀"+"<br />";
+					fun();
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div id="header">实现一只小蜜蜂的循环（函数套用）</div>
+		<div id="center">
+			<button id="btn01">开始</button>
+			<p id="text01"></p>
+		</div>
+	</body>
+</html>
