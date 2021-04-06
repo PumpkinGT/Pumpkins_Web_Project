@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>50郭</title>
+	</head>
+	<body>
+		<script>
+		function fun(x){
+			if(typeof(x)=='number'){
+				if(x%2==0){
+					return console.log('奇数');
+				}
+				else{
+					return console.log('偶数');
+				}
+			}
+			else{
+				return console.log('参数不正确')
+			}
+		}
+		fun(123);
+		fun('asd');
+		</script>
+	</body>
+</html>
